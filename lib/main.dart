@@ -56,12 +56,10 @@ class LogIn extends StatelessWidget {
                   margin: EdgeInsets.fromLTRB(20, 5, 20, 5),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: ListTile(
-                      leading: Icon(Icons.perm_identity_rounded, color: Colors.teal[900]),
-                      title: Text('User Name',
-                        style: TextStyle(
-                          color: Colors.black26
-                        ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'User Name',
+                        icon: Icon(Icons.person)
                       ),
                     ),
                   ),
@@ -72,12 +70,10 @@ class LogIn extends StatelessWidget {
                   margin: EdgeInsets.fromLTRB(20, 5, 20, 5),
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: ListTile(
-                      leading: Icon(Icons.security, color: Colors.teal[900]),
-                      title: Text('Password', 
-                        style: TextStyle(
-                          color: Colors.black26
-                        ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Password',
+                        icon: Icon(Icons.security)
                       ),
                     ),
                   ),
